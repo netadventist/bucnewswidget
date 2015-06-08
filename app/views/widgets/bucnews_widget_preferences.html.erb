@@ -1,0 +1,20 @@
+<% display_style_options = [
+  [_("Titles only"), "titles"],
+  [_("Titles & Abstracts"), "titles_abstracts"],
+  [_("Titles, Abstracts & Thumbnails"), "titles_abstracts_thumbnails"]
+  
+] -%>
+<!-- -->
+<div class="topbar">
+  <h3><%= _('Customize Your BUC Adventist News Widget') %></h3>
+</div>
+
+<% widget_form_tag(template_container, contained_widget) do -%>
+  <div class="lightboxContent">
+    <label for="preference_values_display_style"><%= _('How should the news items be displayed?') -%></label>
+    <%= select_tag "preference_values[display_style]", options_for_select(display_style_options, preference_values['display_style']), :id => 'preference_values_display_style', :class => 'textBox' -%>
+
+    <label for="preference_values_amount"><%= _('How many news items should be displayed?') -%></label>
+    <%= select_tag "preference_values[amount]", options_for_select((1..10), preference_values['amount'].to_i), :id => 'preference_values_display_amount', :class => 'textBox' -%>
+  </div>
+<% end -%>

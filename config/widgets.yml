@@ -1,0 +1,8 @@
+bucnews:
+  title:      "Adventist News UK and Ireland"
+  author:     "Yunuen Carrillo (modified ANN Widget by JB)"
+  view_name:  "bucnews_widget.html.erb"
+  form_name:  "bucnews_widget_preferences.html.erb"
+  default_values:
+    display_style: "titles_abstracts_thumbnails"
+    amount:        3

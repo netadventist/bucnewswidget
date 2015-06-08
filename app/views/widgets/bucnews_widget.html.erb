@@ -1,0 +1,23 @@
+<div class="widget basic widgetdiv1">
+  <div class="widget basic widgetdiv2">
+    <div class="widget basic widgetdiv3">
+      <div class="widget basic widgetdiv4">
+        
+	<h3 class="widgettitle">Adventist News UK and Ireland</h3>
+       
+       <% BUCNEWS.load(@preferences['amount'].to_i).each do |item| -%>
+          <div class="bucnews-widget">
+		<%= item.thumbimg if item.thumbimg && !item.thumbimg.blank? && @preferences['display_style'].include?('thumb')-%>
+		<h4><%= link_to(h(item.title), item.url, :popup => true) -%></h4>
+		<% if @preferences['display_style'].include?('abstract') %>
+			<p><%=truncate(h(item.description), 100) -%></p>
+		<% end -%>
+	  </div>
+        <% end -%>
+	
+	<%= link_to("More News...", "http://adventist.org.uk/news", :popup => true) -%>
+      
+      </div>
+    </div>
+  </div>
+</div>

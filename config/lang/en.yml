@@ -1,0 +1,17 @@
+--- 
+CONFIG_NATIVE_NAME: 
+  text: English
+Customize Your BUC News widget: 
+  text: Your BUC News widget
+How should the news items be displayed?: 
+  text: How should the news items be displayed?
+Titles only: 
+  text: Titles only
+Titles & Abstracts: 
+  text: Titles & Abstracts
+Titles, Abstracts & Thumbnails: 
+  text: Titles, Abstracts & Thumbnails
+How many news items should be displayed?: 
+  text: How many news items should be displayed?
+More: 
+  text: More
