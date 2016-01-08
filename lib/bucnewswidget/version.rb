@@ -1,3 +1,3 @@
-module Bucnewswidget 
-  VERSION = "4.0.6" 
+module Bucnewswidget
+  VERSION = "4.0.6"
 end

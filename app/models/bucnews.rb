@@ -1,7 +1,7 @@
 require 'htmlentities'
 
 class BUCNEWS
-  attr_accessor :title, :description, :thumbimg, :url 
+  attr_accessor :title, :description, :thumbimg, :url
 
 FEED = "http://adventist.org.uk/news/news.rss".freeze
   #FEED = "http://adventist.org.uk/news/news.rss".freeze
@@ -22,8 +22,8 @@ FEED = "http://adventist.org.uk/news/news.rss".freeze
         :title => HTMLEntities.new.decode(item["title"]),
         :description => HTMLEntities.new.decode(item["description"]),
         :thumbimg => HTMLEntities.new.decode(item["guid"]),
-	:url => item['link'])
-	
+  :url => item['link'])
+
     end
   end
 end

@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
   s.license     = 'netAdventist'
   s.metadata    = {'na4_type' => 'extension'}
   s.files = Dir["{app,db,config,lib,public}/**/*"] # + ["Rakefile", "README.rdoc"]  #Uncomment if you have these files
-  
+
   s.add_dependency "rails", "~> 4.0.2"
 end

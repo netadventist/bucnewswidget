@@ -1,4 +1,4 @@
-module Bucnewswidget 
+module Bucnewswidget
   class Engine < ::Rails::Engine
     NAME = 'bucnewswidget'
     include NA::EngineConfig
