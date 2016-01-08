@@ -10,7 +10,7 @@
 		<%= item.thumbimg.html_safe if item.thumbimg && !item.thumbimg.blank? && @preferences['display_style'].include?('thumb')-%>
 		<h4><%= link_to(h(item.title), item.url, :popup => true) -%></h4>
 		<% if @preferences['display_style'].include?('abstract') %>
-			<p><%=truncate(h(item.description), {length: 100}) -%></p>
+			<p><%= truncate(strip_tags(item.description), {length: 100}).html_safe -%></p>
 		<% end -%>
 	  </div>
         <% end -%>
