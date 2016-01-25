@@ -1,5 +1,5 @@
 .bucnews-widget {clear:left; }
-.bucnews-widget h4 {font-size: 1.125em; margin-bottom: 5px; height: auto; font:inherit;} 
+.bucnews-widget h4 {font-size: 1.125em; margin-bottom: 5px; height: auto !important; font:inherit;} 
 .bucnews-widget p {margin-bottom: 0px; font:400 12px/21px "Merriweather", serif;}  
 .bucnews-widget img { float:left; padding-right:1em; padding-bottom:1em;} 
 .bucnews_widget_photo {float: left; padding-right: 1em;}
