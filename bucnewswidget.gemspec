@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = 'BUCNews feed Widget for netAdventist displaying UK and Ireland Adventist News.'
   s.license     = 'netAdventist'
   s.metadata    = {'na4_type' => 'extension'}
-  s.files = Dir["{app,db,config,lib}/**/*"] # + ["Rakefile", "README.rdoc"]  #Uncomment if you have these files
+  s.files = Dir["{app,db,config,lib,public}/**/*"] # + ["Rakefile", "README.rdoc"]  #Uncomment if you have these files
   
   s.add_dependency "rails", "~> 4.0.2"
 end
